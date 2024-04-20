@@ -1,0 +1,42 @@
+<?php // open php
+$FirstName=$_POST['fName'];
+$LastName=$_POST['LName'];
+$EmailID=$_POST['Mail'];
+$Address=$_POST['Address'];
+$City=$_POST['City'];
+$PinCode=$_POST['Code'];
+$State=$_POST['State']; 
+
+// display to see whether the data captured or not
+echo "$FirstName <br>";
+echo "$LastName <br>";
+echo "$EmailID <br>";
+echo "$Address <br>";
+echo "$City <br>";
+echo "$PinCode <br>";
+echo "$State <br>";
+
+//create connection
+$servername = "localhost";
+$username = "root";
+$password = " ";
+$dbname = "test";
+
+// Create connection
+$conn = new mysqli('localhost', 'root','','test');
+
+// Check connection
+
+if ($conn->connect_error){
+	die ('Connection failed : '.$coon->connect_error );
+}
+else{
+	$stmt = $conn->prepare ("insert into exam(fName,LName,Mail,Address,City,Code,State) 
+	values (?,?,?,?,?,?,?)");
+	$stmt->bind_param("sssssss",$FirstName, $LastName, $EmailID, $Address, $City, $PinCode, $State);
+	$stmt->execute();
+	echo "Connected successfully..."; 
+
+	$stmt->close();
+	$conn->close();
+} 

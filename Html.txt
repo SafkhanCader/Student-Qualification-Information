@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<title></title>
+<link href="data.php">
+
+<style>
+#Rules{
+text-align: center;
+}
+body{
+background-color: antiquewhite;
+font-family: verdana;
+}
+input[type="submit"]:hover{
+color: red;
+}
+input[type="Reset"]:hover{
+color: red;
+}
+input[type="text"]{
+color:blue;
+}
+
+</style>
+<body>
+<center>
+<form name="Information" action="data.php" method="post">
+<table>
+<tr>
+<td><br> FIRST NAME</td>
+<td><br><input type="text" name="fName"></td>
+</tr>
+<tr>
+<td><br> LAST NAME</td>
+<td><br><input type="text" name="LName"></td>
+</tr>
+<tr>
+<td><br>AGE</td>
+<td><br>DAY<input type="Number" name="Age">MONTH<input type="Number" name="Age">YEAR<input type="Number" name="Age"></td>
+</tr>
+<tr>
+	<td><br>E-mail ID</td>
+	<td><br><input type="email" name="Mail"></td>
+</tr>
+
+<tr>
+	<td><br>MOBILE NUMBER</td>
+	<td><br><input type="tel" name="Phone"></td>
+</tr>
+
+<tr>
+	<td><br>GENDER</td>
+	<td><br><input type="radio" name="gender"/> Male<input type="radio" name="gender"/>Female<input type="radio" name="gender"/>Others</td>
+</tr>
+
+<tr>
+	<td><br>ADDRESS</td>
+	<td><br><input type="text" name="Address"></td>
+</tr>
+<tr>
+	<td><br>CITY</td>
+	<td><br><input type="text" name="City"></td>
+</tr>
+
+<tr>
+	<td><br>PIN CODE</td>
+	<td><br><input type="number" id="quantity" name="Code"></td>
+</tr>
+
+<tr>
+	<td><br>STATE</td>
+	<td><br><input type="text" name="State"></td>
+</tr>
+
+<tr>
+	<td><br>COUNTRY</td>
+	<td><br><input type="text" name="Country"></td>
+</tr>
+
+<tr>
+	<td><br>HOBBIES</td>
+	<td><br><input type="checkbox" name="hobby"/>DRAWING
+	<input type="checkbox" name="hobby"/>SINGING
+	<input type="checkbox" name="hobby"/>DANCING
+	<input type="checkbox" name="hobby"/>SKETCHING
+	<input type="checkbox" name="hobby"/>OTHERS
+	<br><input type="text" name="Other">
+</td>
+</tr>
+
+<tr>
+	<td><br>QUALIFICATION</td>
+	<td><table border="2">
+	<tr><td>SI.NO.EXAMINATION</td>
+	<td>1.CLASS X</td>
+	<td>2.CLASS XII</td>
+	<td>3.GRADUATION</td>
+	<td>4.MASTERS</td>
+	</tr><br>
+	<tr>
+	<td>BOARD</td>
+	<td><br><input type="text" name="City"></td>
+	<td><br><input type="text" name="City"></td>
+	<td><br><input type="text" name="City"></td>
+	<td><br><input type="text" name="City"></td>
+	</tr>
+	<tr>
+	<td>PERCENTAGE</td>
+	<td><br><input type="number" id="quantity" name="percentage"></td>
+	<td><br><input type="number" id="quantity" name="percentage"></td>
+	<td><br><input type="number" id="quantity" name="percentage"></td>
+	<td><br><input type="number" id="quantity" name="percentage"></td>
+	</tr>
+	<tr>
+	<td>YEAR OF PASSING</td>
+	<td><br><input type="number" id="quantity" name="year"></td>
+	<td><br><input type="number" id="quantity" name="year"></td>
+	<td><br><input type="number" id="quantity" name="year"></td>
+	<td><br><input type="number" id="quantity" name="year"></td>
+	</tr>
+	</table></td>
+</tr>
+</tr>
+
+<tr>
+	<td><br>COURSES APPLIED FOR</td>
+	<td><br><input type="radio" name="course"/> BCA <input type="radio" name="course"/> B.COM <input type="radio" name="course"/>B.SC <input type="radio" name="course"/>BA</td>
+</tr>
+
+<table id="Rules">
+	<tr>
+		<td><br><input type="Submit" name="submit button" required="required"></td>
+		<td><br><input type="Reset" name="reset button" required="required"></td>
+	</tr>
+</table>
+</table>
+
+</form>
+</center>
+
+
+</body>
+</html>
